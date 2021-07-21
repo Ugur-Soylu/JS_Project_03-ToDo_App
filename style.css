@@ -110,3 +110,49 @@ color: white;
 .button{
     margin: 0.3rem;
 }
+
+@media (max-width: 368px) {
+    #container{
+    width: 90%;
+    min-height: 500px;
+    margin-top: 2rem;
+    }
+    #to-do-box{
+        width:80%    
+    }
+    #task-List{
+        width:90%    
+    }
+}
+@media  (min-width: 368px) and (max-width: 767px) {
+    
+    #container{
+    width: 90%;
+    min-height: 600px;
+    margin-top: 2.5rem;
+    
+    }
+    #to-do-box{
+        width:80% ;   
+    }
+    #task-List{
+        width:90%    
+    }
+}
+@media  (min-width: 768px) and (max-width: 1020px) {
+    
+    #container{
+    width: 80%;
+    min-height: 800px;
+        
+    }
+    
+}
+@media  (min-width: 1024px){
+    
+    #container{
+    width: 70%;
+    min-height: 550px;    
+    font-size: 1rem;
+    
+}
