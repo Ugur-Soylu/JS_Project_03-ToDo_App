@@ -111,9 +111,9 @@ color: white;
     margin: 0.3rem;
 }
 
-@media (max-width: 368px) {
+@media (max-width: 378px) {
     #container{
-    width: 90%;
+    width: 80%;
     min-height: 500px;
     margin-top: 2rem;
     }
@@ -123,14 +123,17 @@ color: white;
     #task-List{
         width:90%    
     }
+     #plus, #tick, #delete{
+        min-height: 1.6rem;
+        width: 1.6rem; 
+    } 
 }
-@media  (min-width: 368px) and (max-width: 767px) {
+@media  (min-width: 378px) and (max-width: 767px) {
     
     #container{
     width: 90%;
     min-height: 600px;
-    margin-top: 2.5rem;
-    
+    margin-top: 2.5rem;    
     }
     #to-do-box{
         width:80% ;   
@@ -139,7 +142,7 @@ color: white;
         width:90%    
     }
 }
-@media  (min-width: 768px) and (max-width: 1020px) {
+@media  (min-width: 768px) and (max-width: 1024px) {
     
     #container{
     width: 80%;
