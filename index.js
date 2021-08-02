@@ -1,5 +1,7 @@
 const plus = document.querySelector("#plus");
 const toDoText = document.querySelector("#to-do")
+const typeWarn = document.querySelector("span");
+typeWarn.style.visibility = "hidden"
 
 const addToDo = function(){
     if(toDoText.value != ""){
@@ -8,15 +10,16 @@ const addToDo = function(){
         newElement.innerHTML = `<button class="button"><img id="tick" src="./images/tickButton.jpg" alt="tick" width="100%" height="100%"></button>
         <p id="text">${toDoText.value}</p>
         <button class="button"><img id="delete" src="./images/deleteButton.png" alt="delete" width="100%" height="100%"></button> <br>`
-        
+        typeWarn.style.visibility = "hidden"
         const taskList = document.querySelector("#header-2");
         taskList.insertAdjacentElement("afterend", newElement)
         toDoText.value = "";
+    }else{
+        typeWarn.style.color = "rgb(11, 46, 46)";
+        typeWarn.style.visibility = "visible";
     }
 
 }
-
-
 
 
 const deleteItem = function (){
